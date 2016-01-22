@@ -11,7 +11,6 @@
  * LCD D6 pin to digital pin 3
  * LCD D7 pin to digital pin 2
  
- 
  von Henning Janssen
  */
 
@@ -27,10 +26,10 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 // initialize input
 volatile int hallPin = A0; //Eingang A0
 volatile float hallRef = 2500; //Spannung bei B = 0 mT
-volatile double messwertsammlung = 0; //Speicher für Messwerte
+volatile double messwertsammlung = 0; //Speicher fuer Messwerte
 volatile float messwert = 0;
-volatile int messwertAnz = 0;  //Zähler für Messwertanzahl
-volatile float sensordivider = 25; //Sensorverhältnis in mT/mV
+volatile int messwertAnz = 0;  //Zaehler fuer Messwertanzahl
+volatile float sensordivider = 25; //Sensorverhaeltnis in mT/mV
 
 
 void setup()
